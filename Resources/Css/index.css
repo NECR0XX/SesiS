@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Estilo para o link principal do menu */
+nav .dropbtn {
+    display: inline-block;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+    border: 1px solid rgb(86, 86, 86);
+    background-color: rgb(175, 175, 175);
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+}
+
+/* Estilo para o container do menu drop-down */
+.menu_drop {
+    display: none;
+    position: absolute;
+    border-radius: 5px;
+    border: 0.5px solid black;
+    background: linear-gradient(to bottom, #c6c6c6, #acacac);
+    min-width: 160px;
+    box-shadow: 6px 7px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+/* Estilo para os itens do menu drop-down */
+.menu_drop ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu_drop ul li {
+    padding: 8px 16px;
+    text-align: left;
+}
+
+.menu_drop ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.menu_drop ul li:hover {
+    background-color: #9c9c9c;
+}
+
+/* Mostra o menu drop-down quando o link principal é hover */
+nav .dropbtn:hover + .menu_drop {
+    display: block;
+}
+
+/* Mantém o menu visível quando o cursor está sobre ele */
+.menu_drop:hover {
+    display: block;
+}
+
+/* Menu Section */
+.menu_section {
+    display: flex;
+}
